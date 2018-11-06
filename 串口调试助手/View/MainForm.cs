@@ -29,7 +29,7 @@ namespace 串口调试助手
             InitializeComponent();
           
         }
-
+        //213
         /// <summary>
         /// 初始化串口设置
         /// </summary>
