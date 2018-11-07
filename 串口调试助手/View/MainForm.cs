@@ -29,7 +29,6 @@ namespace 串口调试助手
             InitializeComponent();
           
         }
-        //213
         /// <summary>
         /// 初始化串口设置
         /// </summary>
@@ -47,8 +46,7 @@ namespace 串口调试助手
             dataBitComboBox.Items.Add(6);
             dataBitComboBox.Items.Add(7);
             dataBitComboBox.Items.Add(8);
-            dataBitComboBox.Text = dataBitComboBox.Items[3].ToString();  //数据位默认值
-
+            dataBitComboBox.Text = dataBitComboBox.Items[3].ToString();  //数据位默
             stopBitComboBox.Items.Add(1);  //停止位参数设置
             stopBitComboBox.Items.Add(1.5);
             stopBitComboBox.Items.Add(2);
@@ -134,9 +132,6 @@ namespace 串口调试助手
 
                     }
 
-                    double temp = (double)(Convert.ToInt32(tempStr, 16)) / 10.0; //计算温度值
-
-                    tempTextBox.Text = Convert.ToString(temp); //tempTextBox显示温度值
 
                     if (hexReceRadioButton.Checked) //如果接收模式是16进制
                     {
@@ -226,7 +221,7 @@ namespace 串口调试助手
 
             groupBox1.Enabled = true;          
             groupBox7.Enabled = false;
-            autoCheckBox.Checked = false;
+            
 
             if (portComboBox.Items.Count == 0)
                 serialPortStated.Text = "Not Connected！";
@@ -325,26 +320,7 @@ namespace 串口调试助手
            // System.Diagnostics.Debug.WriteLine("123");
         }
 
-        /// <summary>
-        /// “自动发送”复选框事件
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void autoCheckBox_CheckedChanged_1(object sender, EventArgs e)  //自动发送事件
-        {
-            if (autoCheckBox.Checked)  //判断自动发送是否被选择，如果选择了，则启用timer时钟
-            {
-                setTimeTextBox.Enabled = false;  //设置的时间间距不能修改
-                timer.Enabled = true;
-                //timer.Interval = 1000;
-                timer.Interval = int.Parse(setTimeTextBox.Text);
-            }
-            else
-            {
-                timer.Enabled = false; //timer不能启用
-                setTimeTextBox.Enabled = true;  // //设置的时间间距可以修改
-            }
-        }
+       
 
 
         /// <summary>
@@ -362,10 +338,7 @@ namespace 串口调试助手
             {                
                 receiveTextBox.SelectAll();
             }
-            if(tempTextBox.Focused)
-            {
-                tempTextBox.SelectAll();
-            }
+            
         }
 
 
@@ -408,11 +381,7 @@ namespace 串口调试助手
                 //Clipboard.SetText(receiveTextBox.SelectedText);
                 receiveTextBox.Copy();
             }
-            if (tempTextBox.Focused)
-            {
-                // Clipboard.SetText(tempTextBox.SelectedText);
-                tempTextBox.Copy();
-            }
+            
         }
 
 
@@ -434,11 +403,7 @@ namespace 串口调试助手
                 // receiveTextBox.AppendText(Clipboard.GetText());
                 receiveTextBox.Paste();
             }
-            if (tempTextBox.Focused)
-            {
-                //tempTextBox.AppendText( Clipboard.GetText());
-                tempTextBox.Paste();
-            }
+         
         }
 
 
@@ -457,10 +422,7 @@ namespace 串口调试助手
             {
                 receiveTextBox.Cut();
             }
-            if (tempTextBox.Focused)
-            {
-                tempTextBox.Cut();
-            }
+            
         }
 
         /// <summary>
@@ -478,10 +440,7 @@ namespace 串口调试助手
             {
                 receiveTextBox.Undo();
             }
-            if (tempTextBox.Focused)
-            {
-                tempTextBox.Undo();
-            }
+           
         }
 
         /// <summary>
@@ -589,3 +548,4 @@ namespace 串口调试助手
     }
     
 }
+ 

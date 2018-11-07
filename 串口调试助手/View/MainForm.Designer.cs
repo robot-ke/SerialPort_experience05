@@ -70,17 +70,10 @@
             this.StoreComboBox = new System.Windows.Forms.ComboBox();
             this.openButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
-            this.Temp = new System.Windows.Forms.Label();
-            this.tempTextBox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.clearButton = new System.Windows.Forms.Button();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.setTimeTextBox = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.autoCheckBox = new System.Windows.Forms.CheckBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
@@ -98,7 +91,6 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -218,9 +210,9 @@
             this.groupBox1.Controls.Add(this.portComboBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(9, 38);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(166, 128);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -233,7 +225,7 @@
             this.stopBitComboBox.ForeColor = System.Drawing.SystemColors.InfoText;
             this.stopBitComboBox.FormattingEnabled = true;
             this.stopBitComboBox.Location = new System.Drawing.Point(52, 100);
-            this.stopBitComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.stopBitComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.stopBitComboBox.Name = "stopBitComboBox";
             this.stopBitComboBox.Size = new System.Drawing.Size(92, 20);
             this.stopBitComboBox.TabIndex = 7;
@@ -256,7 +248,7 @@
             this.dataBitComboBox.ForeColor = System.Drawing.SystemColors.MenuText;
             this.dataBitComboBox.FormattingEnabled = true;
             this.dataBitComboBox.Location = new System.Drawing.Point(52, 77);
-            this.dataBitComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataBitComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.dataBitComboBox.Name = "dataBitComboBox";
             this.dataBitComboBox.Size = new System.Drawing.Size(92, 20);
             this.dataBitComboBox.TabIndex = 5;
@@ -280,7 +272,7 @@
             this.baudRateComboBox.ForeColor = System.Drawing.SystemColors.InfoText;
             this.baudRateComboBox.FormattingEnabled = true;
             this.baudRateComboBox.Location = new System.Drawing.Point(52, 54);
-            this.baudRateComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.baudRateComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.baudRateComboBox.Name = "baudRateComboBox";
             this.baudRateComboBox.Size = new System.Drawing.Size(92, 20);
             this.baudRateComboBox.TabIndex = 3;
@@ -303,7 +295,7 @@
             this.portComboBox.ForeColor = System.Drawing.SystemColors.MenuText;
             this.portComboBox.FormattingEnabled = true;
             this.portComboBox.Location = new System.Drawing.Point(52, 30);
-            this.portComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.portComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.portComboBox.Name = "portComboBox";
             this.portComboBox.Size = new System.Drawing.Size(92, 20);
             this.portComboBox.TabIndex = 1;
@@ -356,9 +348,9 @@
             // 
             this.groupBox2.Controls.Add(this.panel1);
             this.groupBox2.Location = new System.Drawing.Point(11, 170);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(166, 57);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
@@ -369,7 +361,7 @@
             this.panel1.Controls.Add(this.hexSendRadioButton);
             this.panel1.Controls.Add(this.asciiSendRadioButton);
             this.panel1.Location = new System.Drawing.Point(10, 19);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(132, 25);
             this.panel1.TabIndex = 0;
@@ -379,7 +371,7 @@
             this.hexSendRadioButton.AutoSize = true;
             this.hexSendRadioButton.Checked = true;
             this.hexSendRadioButton.Location = new System.Drawing.Point(69, 2);
-            this.hexSendRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hexSendRadioButton.Margin = new System.Windows.Forms.Padding(2);
             this.hexSendRadioButton.Name = "hexSendRadioButton";
             this.hexSendRadioButton.Size = new System.Drawing.Size(41, 16);
             this.hexSendRadioButton.TabIndex = 1;
@@ -391,7 +383,7 @@
             // 
             this.asciiSendRadioButton.AutoSize = true;
             this.asciiSendRadioButton.Location = new System.Drawing.Point(2, 2);
-            this.asciiSendRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asciiSendRadioButton.Margin = new System.Windows.Forms.Padding(2);
             this.asciiSendRadioButton.Name = "asciiSendRadioButton";
             this.asciiSendRadioButton.Size = new System.Drawing.Size(53, 16);
             this.asciiSendRadioButton.TabIndex = 0;
@@ -402,9 +394,9 @@
             // 
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Location = new System.Drawing.Point(11, 245);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(166, 54);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
@@ -415,7 +407,7 @@
             this.panel2.Controls.Add(this.hexReceRadioButton);
             this.panel2.Controls.Add(this.asciiReceRadioButton);
             this.panel2.Location = new System.Drawing.Point(10, 19);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(132, 25);
             this.panel2.TabIndex = 0;
@@ -425,7 +417,7 @@
             this.hexReceRadioButton.AutoSize = true;
             this.hexReceRadioButton.Checked = true;
             this.hexReceRadioButton.Location = new System.Drawing.Point(69, 2);
-            this.hexReceRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hexReceRadioButton.Margin = new System.Windows.Forms.Padding(2);
             this.hexReceRadioButton.Name = "hexReceRadioButton";
             this.hexReceRadioButton.Size = new System.Drawing.Size(41, 16);
             this.hexReceRadioButton.TabIndex = 1;
@@ -437,7 +429,7 @@
             // 
             this.asciiReceRadioButton.AutoSize = true;
             this.asciiReceRadioButton.Location = new System.Drawing.Point(2, 2);
-            this.asciiReceRadioButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asciiReceRadioButton.Margin = new System.Windows.Forms.Padding(2);
             this.asciiReceRadioButton.Name = "asciiReceRadioButton";
             this.asciiReceRadioButton.Size = new System.Drawing.Size(53, 16);
             this.asciiReceRadioButton.TabIndex = 0;
@@ -451,9 +443,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.receiveTextBox);
             this.groupBox4.Location = new System.Drawing.Point(180, 38);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(444, 205);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
@@ -463,7 +455,7 @@
             // 
             this.receiveTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.receiveTextBox.Location = new System.Drawing.Point(2, 16);
-            this.receiveTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.receiveTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.receiveTextBox.Multiline = true;
             this.receiveTextBox.Name = "receiveTextBox";
             this.receiveTextBox.Size = new System.Drawing.Size(440, 187);
@@ -476,9 +468,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.sendTextBox);
             this.groupBox5.Location = new System.Drawing.Point(182, 270);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox5.Size = new System.Drawing.Size(343, 92);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
@@ -488,7 +480,7 @@
             // 
             this.sendTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sendTextBox.Location = new System.Drawing.Point(2, 16);
-            this.sendTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sendTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.sendTextBox.Multiline = true;
             this.sendTextBox.Name = "sendTextBox";
             this.sendTextBox.Size = new System.Drawing.Size(339, 74);
@@ -499,10 +491,10 @@
             this.sendButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.sendButton.AutoSize = true;
             this.sendButton.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sendButton.Location = new System.Drawing.Point(11, 110);
-            this.sendButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sendButton.Location = new System.Drawing.Point(9, 91);
+            this.sendButton.Margin = new System.Windows.Forms.Padding(2);
             this.sendButton.Name = "sendButton";
-            this.sendButton.Size = new System.Drawing.Size(67, 32);
+            this.sendButton.Size = new System.Drawing.Size(74, 49);
             this.sendButton.TabIndex = 8;
             this.sendButton.Text = "发送";
             this.sendButton.UseVisualStyleBackColor = true;
@@ -515,7 +507,7 @@
             this.StoreComboBox.BackColor = System.Drawing.Color.White;
             this.StoreComboBox.FormattingEnabled = true;
             this.StoreComboBox.Location = new System.Drawing.Point(184, 369);
-            this.StoreComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StoreComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.StoreComboBox.Name = "StoreComboBox";
             this.StoreComboBox.Size = new System.Drawing.Size(339, 20);
             this.StoreComboBox.TabIndex = 9;
@@ -527,7 +519,7 @@
             this.openButton.AutoSize = true;
             this.openButton.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.openButton.Location = new System.Drawing.Point(14, 30);
-            this.openButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.openButton.Margin = new System.Windows.Forms.Padding(2);
             this.openButton.Name = "openButton";
             this.openButton.Size = new System.Drawing.Size(50, 37);
             this.openButton.TabIndex = 11;
@@ -541,42 +533,13 @@
             this.closeButton.AutoSize = true;
             this.closeButton.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.closeButton.Location = new System.Drawing.Point(91, 30);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(2);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(50, 37);
             this.closeButton.TabIndex = 12;
             this.closeButton.Text = "关闭";
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // Temp
-            // 
-            this.Temp.AutoSize = true;
-            this.Temp.Location = new System.Drawing.Point(4, 41);
-            this.Temp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Temp.Name = "Temp";
-            this.Temp.Size = new System.Drawing.Size(41, 12);
-            this.Temp.TabIndex = 13;
-            this.Temp.Text = "温度值";
-            // 
-            // tempTextBox
-            // 
-            this.tempTextBox.Location = new System.Drawing.Point(47, 38);
-            this.tempTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tempTextBox.Name = "tempTextBox";
-            this.tempTextBox.Size = new System.Drawing.Size(32, 21);
-            this.tempTextBox.TabIndex = 14;
-            this.tempTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(80, 41);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 12);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "℃";
             // 
             // timer
             // 
@@ -587,9 +550,9 @@
             this.groupBox6.Controls.Add(this.openButton);
             this.groupBox6.Controls.Add(this.closeButton);
             this.groupBox6.Location = new System.Drawing.Point(11, 304);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox6.Size = new System.Drawing.Size(150, 80);
             this.groupBox6.TabIndex = 16;
             this.groupBox6.TabStop = false;
@@ -598,15 +561,11 @@
             // 
             this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox7.Controls.Add(this.clearButton);
-            this.groupBox7.Controls.Add(this.groupBox8);
-            this.groupBox7.Controls.Add(this.label5);
-            this.groupBox7.Controls.Add(this.tempTextBox);
-            this.groupBox7.Controls.Add(this.Temp);
             this.groupBox7.Controls.Add(this.sendButton);
             this.groupBox7.Location = new System.Drawing.Point(530, 243);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox7.Size = new System.Drawing.Size(94, 144);
             this.groupBox7.TabIndex = 7;
             this.groupBox7.TabStop = false;
@@ -615,60 +574,14 @@
             // 
             this.clearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.clearButton.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.clearButton.Location = new System.Drawing.Point(11, 6);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clearButton.Location = new System.Drawing.Point(9, 18);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(2);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(74, 25);
+            this.clearButton.Size = new System.Drawing.Size(74, 49);
             this.clearButton.TabIndex = 8;
             this.clearButton.Text = "清除";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.setTimeTextBox);
-            this.groupBox8.Controls.Add(this.label7);
-            this.groupBox8.Controls.Add(this.autoCheckBox);
-            this.groupBox8.Location = new System.Drawing.Point(6, 58);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox8.Size = new System.Drawing.Size(82, 50);
-            this.groupBox8.TabIndex = 7;
-            this.groupBox8.TabStop = false;
-            // 
-            // setTimeTextBox
-            // 
-            this.setTimeTextBox.Location = new System.Drawing.Point(3, 29);
-            this.setTimeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.setTimeTextBox.Name = "setTimeTextBox";
-            this.setTimeTextBox.Size = new System.Drawing.Size(52, 21);
-            this.setTimeTextBox.TabIndex = 8;
-            this.setTimeTextBox.Text = "1000";
-            this.setTimeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(58, 29);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 15);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "ms";
-            // 
-            // autoCheckBox
-            // 
-            this.autoCheckBox.AutoSize = true;
-            this.autoCheckBox.Location = new System.Drawing.Point(14, 9);
-            this.autoCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.autoCheckBox.Name = "autoCheckBox";
-            this.autoCheckBox.Size = new System.Drawing.Size(72, 16);
-            this.autoCheckBox.TabIndex = 7;
-            this.autoCheckBox.Text = "自动发送";
-            this.autoCheckBox.UseVisualStyleBackColor = true;
-            this.autoCheckBox.CheckedChanged += new System.EventHandler(this.autoCheckBox_CheckedChanged_1);
             // 
             // timer1
             // 
@@ -724,7 +637,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(342, 456);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -752,8 +665,6 @@
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -797,18 +708,11 @@
         private System.Windows.Forms.ToolStripMenuItem Paste;
       
         private System.Windows.Forms.Button closeButton;
-        private System.Windows.Forms.Label Temp;
-        private System.Windows.Forms.TextBox tempTextBox;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         public System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox setTimeTextBox;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox autoCheckBox;
         public System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ToolStripMenuItem New;
